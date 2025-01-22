@@ -1,0 +1,123 @@
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(
+    to top,
+    rgba(34, 139, 34, 0.8),
+    rgba(255, 255, 255, 0.9)
+  );
+  color: black;
+  padding: 60px 20px;
+}
+
+/* Logo */
+.logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  font-size: 35px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  color: #4267b2;
+}
+
+.insta {
+  color: #c13584;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+/* Headings */
+.footer-section-heading {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #34573a;
+  margin-bottom: 15px;
+}
+
+/* List Items */
+.footer-section-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-section-item .icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #34573a;
+}
+
+.footer-section-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Links */
+.footer-item-link {
+  color: #34573a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-item-link:hover {
+  color: #eab01c;
+  text-decoration: underline;
+}
+
+/* Divider */
+.hr-footer {
+  border-top: 3px solid #eab01c;
+  margin: 30px 0;
+}
+
+/* Copyright Text */
+.footer-section-copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-section-heading {
+    font-size: 1.1rem;
+  }
+
+  .footer-section-text {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,67 @@
+/* Navbar Styles */
+.nav-container {
+  background: rgba(255, 255, 255, 0.1); /* Light translucent */
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+}
+
+.nav-container.colorChange {
+  background-color: #a0cbbf;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.agrigreen-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.nav-link-item {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link-item:hover,
+.nav-link-item.active {
+  color: #2ecc71;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.nav-button {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+
+.nav-button:hover {
+  background-color: #ffc107;
+  color: #000000;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0.5rem;
+  }
+
+  .nav-link-item {
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .modal-fullscreen .modal-content {
+    border-radius: 0;
+  }
+}

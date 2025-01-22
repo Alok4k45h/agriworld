@@ -1,0 +1,39 @@
+.investor-container {
+  background-color: #f9f9f9; /* Light background for a clean look */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.team-subheading {
+  color: #eab01c;
+  font-family: "Merienda", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* Center align for better positioning */
+  margin-bottom: 10px;
+}
+
+.team-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  color: #34573a;
+  font-weight: bold;
+  text-align: center; /* Center align the heading */
+  margin-bottom: 30px; /* Adds space below the heading */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .team-heading {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .team-subheading {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}

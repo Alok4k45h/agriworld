@@ -1,0 +1,98 @@
+cardOne {
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardOne:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardOne-container {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cardOne-image {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardOne-title {
+  color: #004916;
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
+
+.cardOne-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #5a7184;
+  margin: 1rem 0;
+}
+
+.highlight {
+  font-family: "Merienda", sans-serif;
+  font-size: 1rem;
+  color: #121212;
+}
+
+.span-highlight {
+  color: #004916;
+  font-weight: bold;
+}
+
+.cardOne-modal-trigger {
+  color: #004916;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardOne-icon {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.2s ease;
+}
+
+.cardOne-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Modal Styling */
+.modal-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-body ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardOne-title {
+    font-size: 1.5rem;
+  }
+
+  .cardOne-container {
+    padding: 1rem;
+  }
+
+  .cardOne-desc {
+    font-size: 0.9rem;
+  }
+}

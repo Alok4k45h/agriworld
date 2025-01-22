@@ -1,0 +1,86 @@
+/* Container */
+.contact-info-container {
+  padding: 2rem;
+  color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-info-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Titles and Descriptions */
+.info-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: goldenrod; /* Deep green for nature theme */
+  margin-bottom: 1rem;
+}
+
+.info-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a7d2b;
+  margin-top: 2rem;
+}
+
+.info-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f4f9f4;
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Details */
+.contact-details {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: blue;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(0.8);
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #e4405f;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+/* Map */
+.map iframe {
+  border-radius: 8px;
+}

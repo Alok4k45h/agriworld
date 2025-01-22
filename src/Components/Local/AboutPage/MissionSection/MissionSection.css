@@ -1,0 +1,57 @@
+/* Mission Section Styling */
+.mission-section {
+  padding: 3rem 0; /* Consistent padding */
+  background-color: #f9f9f9; /* Light neutral background */
+}
+
+/* Image Container */
+.img-container {
+  background-image: url("https://i.pinimg.com/474x/3a/4c/35/3a4c357c0c1e580cd9f70a9b3e391e1f.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem; /* Slightly larger for emphasis */
+  font-weight: bold;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Text Container */
+.txt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333333; /* Dark gray for contrast */
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem; /* Readable font size */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* Row Styling */
+.row {
+  align-items: center; /* Align items centrally for a polished layout */
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .img-container {
+    font-size: 1.5rem;
+    height: 25vh; /* Reduced height for smaller screens */
+  }
+
+  .txt-container {
+    font-size: 1rem;
+    padding: 1rem; /* Extra padding for better readability */
+  }
+}

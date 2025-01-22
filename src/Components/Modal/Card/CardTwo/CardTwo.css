@@ -1,0 +1,64 @@
+.social-card {
+  background-color: #f5f8f6; /* Light background for better readability */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+  padding-right: 15px;
+  flex: 1;
+}
+
+.cardTwo-title {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #004916; /* Nature-inspired color */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardTwo-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #5a7184;
+  text-align: justify;
+}
+
+.cardTwo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+@media (max-width: 768px) {
+  .social-card {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .cardTwo-title {
+    font-size: 1.5rem;
+  }
+
+  .cardTwo-desc {
+    font-size: 0.9rem;
+  }
+
+  .cardTwo-img {
+    margin-top: 1.5rem; /* Add spacing between text and image */
+  }
+}

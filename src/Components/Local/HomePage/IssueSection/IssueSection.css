@@ -1,0 +1,76 @@
+/* General Section Styling */
+.issue-section {
+  background: url("https://res.cloudinary.com/alokkumar07/image/upload/v1737310223/Agrigreen/issueBg_igbzqy.webp")
+    no-repeat center center/cover;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.issue-card {
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.85);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.issue-section-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.issue-section-super-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.issue-section-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #34573a;
+  margin-top: 1rem;
+}
+
+.issue-section-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #5a7184;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.issue-item-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #004916;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.issue-item-link:hover {
+  color: #028837;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .issue-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .issue-section-heading {
+    font-size: 1.25rem;
+  }
+
+  .issue-section-description {
+    font-size: 0.9rem;
+  }
+}

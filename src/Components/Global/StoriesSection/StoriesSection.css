@@ -1,0 +1,49 @@
+.stories-section {
+  padding: 60px 20px;
+}
+.stories-section-sub-heading {
+  color: #eab01c;
+  font-family: "Merienda", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.stories-section-heading {
+  font-family: "Protest Revolution", sans-serif;
+  color: #34573a;
+  font-weight: bold;
+}
+.stories-card {
+  background-color: rgba(0, 128, 0, 0.699);
+  padding: 20px;
+}
+.stories-card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.stories-card-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+}
+.stories-card-person-name {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+}
+
+.slide-icon {
+  background-color: rgba(0, 128, 0, 0.699);
+}
+
+@media (max-width: 768px) {
+  .stories-section {
+    padding: 20px;
+  }
+
+  .stories-section-heading {
+    font-size: 1.5rem;
+  }
+}

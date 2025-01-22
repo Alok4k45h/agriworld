@@ -1,0 +1,68 @@
+.devicon-container {
+  background: linear-gradient(to bottom, #a0cbbf, rgba(255, 255, 255, 0.9));
+  color: black;
+}
+
+.devicon-header {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.devicon-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.849);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.icon-card {
+  background-color: #f5f8f6; /* Light, soft background for each card */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-style {
+  height: 120px; /* Adjust image size */
+  width: 120px;
+  margin-bottom: 15px;
+  object-fit: contain; /* Ensure images stay proportional */
+}
+
+.icon-title {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #004916;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .devicon-header {
+    font-size: 1.5rem;
+  }
+
+  .devicon-desc {
+    font-size: 1rem;
+  }
+
+  .icon-title {
+    font-size: 1.1rem;
+  }
+
+  .img-style {
+    height: 100px;
+    width: 100px;
+  }
+}

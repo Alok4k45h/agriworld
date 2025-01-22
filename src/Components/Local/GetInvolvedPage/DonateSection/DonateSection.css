@@ -1,0 +1,87 @@
+.donate-section {
+  background-color: #f5f8f6; /* Light background for a fresh, clean look */
+  color: #2d3a2f; /* Dark green text for a natural, earthy tone */
+  font-family: "Roboto", sans-serif;
+}
+
+.donate-header {
+  font-family: "Merienda", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004916;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.donate-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5a7184;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.account-container {
+  background-color: #004916; /* Dark background for contrast */
+  background: linear-gradient(to left, #004916, rgba(218, 165, 32, 0.87));
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-header {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.bank-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.small-card {
+  background-color: #f0f4f2;
+  color: #2d3a2f;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.small-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bank-title {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #004916;
+}
+
+@media (max-width: 768px) {
+  .donate-header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .donate-desc {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .account-header {
+    font-size: 1.5rem;
+  }
+
+  .small-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

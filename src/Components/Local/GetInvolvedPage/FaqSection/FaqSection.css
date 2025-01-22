@@ -1,0 +1,32 @@
+.faq-container {
+  background: linear-gradient(to top, #a0cbbf, rgba(255, 255, 255, 0.9));
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.faq-header {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black; /* Light color for better readability */
+}
+
+.faq-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .faq-img {
+    max-width: 80%; /* Ensure the image scales down well on smaller screens */
+  }
+
+  .faq-header {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}

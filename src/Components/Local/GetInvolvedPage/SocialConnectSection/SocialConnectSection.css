@@ -1,0 +1,73 @@
+.social-header {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #5a7184;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social-Title {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004916; /* Nature-inspired color */
+  margin-bottom: 1.5rem;
+}
+
+.social-card {
+  background-color: #f5f8f6; /* Lighter background for cards */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+  padding: 10px;
+}
+
+.content-heading {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.hr-style {
+  color: #004916;
+}
+
+@media (max-width: 768px) {
+  .social-header {
+    font-size: 1.5rem;
+  }
+
+  .social-desc {
+    font-size: 1rem;
+  }
+
+  .social-Title {
+    font-size: 1.75rem;
+  }
+
+  .social-card {
+    width: 100%;
+    padding: 15px;
+  }
+}

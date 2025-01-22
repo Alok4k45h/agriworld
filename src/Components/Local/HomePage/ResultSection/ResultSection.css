@@ -1,0 +1,19 @@
+/* Result Section Styling */
+.result-section {
+  padding: 3rem 0; /* Consistent padding for top and bottom */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.result-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem; /* Adjusted for better hierarchy */
+  font-weight: 700;
+  color: #333; /* Neutral dark color for accessibility */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .result-heading {
+    font-size: 1.5rem; /* Responsive font size for smaller screens */
+  }
+}

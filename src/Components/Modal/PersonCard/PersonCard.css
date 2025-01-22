@@ -1,0 +1,69 @@
+/* General Styling for Person Card */
+.person-card {
+  height: 400px;
+  width: 100%;
+  max-width: 500px; /* Ensures consistent width for larger screens */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.person-card:hover {
+  transform: scale(1.05); /* Smooth zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevation effect */
+}
+
+.card-text-container {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6); /* Overlay for text readability */
+  text-align: center;
+  border-radius: 0 0 10px 10px; /* Matches card's border-radius */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.person-card:hover .card-text-container {
+  background: rgba(255, 255, 255, 0.9); /* Light background on hover */
+  color: #34573a; /* Green shade for text */
+}
+
+.person-name {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 1.25rem; /* Responsive and readable size */
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.person-position {
+  font-family: "Merienda", sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "Merienda", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+}

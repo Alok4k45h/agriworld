@@ -1,0 +1,97 @@
+/* General Styling */
+.home-banner {
+  height: 100vh;
+  background: url("https://res.cloudinary.com/alokkumar07/image/upload/v1737308767/Agrigreen/AgriBanner_fw4sbd.webp")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.3);
+}
+
+.home-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Typography */
+.typewriter-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.657);
+  margin-bottom: 1rem;
+}
+
+.home-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.657);
+}
+
+.home-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.657);
+}
+
+.highlight-A-home {
+  color: #eab01c;
+  font-size: 4rem;
+}
+
+.highlight-G-home {
+  color: #388e3c;
+  font-size: 4rem;
+}
+
+/* Images */
+.logo-image {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-image:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .typewriter-heading {
+    font-size: 2rem;
+  }
+
+  .home-heading {
+    font-size: 2.5rem;
+  }
+
+  .logo-image {
+    max-width: 120px;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+}

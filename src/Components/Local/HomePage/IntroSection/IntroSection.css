@@ -1,0 +1,70 @@
+/* General Section Styling */
+.intro-section {
+  padding: 4rem 0;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Heading and Description */
+.intro-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004916; /* Brand color for emphasis */
+  margin-bottom: 1rem;
+}
+
+.intro-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  color: #5a7184;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Link Styling */
+.intro-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #004916;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.intro-link:hover {
+  color: #028837; /* Slightly lighter shade on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .intro-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .intro-link {
+    justify-content: center;
+  }
+}

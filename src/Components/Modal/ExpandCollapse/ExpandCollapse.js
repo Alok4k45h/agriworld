@@ -9,8 +9,8 @@ function ExpandCollapse() {
   const toggleCollapse = () => setIsOpen((prevState) => !prevState);
 
   return (
-    <div className="expand-collapse-section py-4">
-      <div className="container">
+    <div className="expand-collapse-section py-4 w-100">
+      <div className="container-fluid">
         <div className="text-section">
           <div
             onClick={toggleCollapse}

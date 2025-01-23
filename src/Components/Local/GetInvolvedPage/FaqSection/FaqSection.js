@@ -1,37 +1,3 @@
-// import React from "react";
-// import "./FaqSection.css";
-// import ExpandCollapse from "../../../Modal/ExpandCollapse/ExpandCollapse";
-
-// function FaqSection() {
-//   return (
-//     <div className="pt-5 pb-5 faq-container" id="faqSection">
-//       <div className="container">
-//         <div className="row">
-//           <div
-//             className="col-12 col-md-5 d-flex flex-column justify-content-center"
-//             data-aos="zoom-in-up"
-//           >
-//             <img
-//               src="https://t4.ftcdn.net/jpg/01/28/17/47/360_F_128174778_0XvhB1qi70yXNOPuUFzBNT85xKaWnVde.jpg"
-//               alt=""
-//               className="faq-img"
-//             />
-//           </div>
-//           <div className="col-12 col-md-7">
-//             <ExpandCollapse />
-//             <ExpandCollapse />
-//             <ExpandCollapse />
-//             <ExpandCollapse />
-//             <ExpandCollapse />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default FaqSection;
-
 import React from "react";
 import "./FaqSection.css";
 import ExpandCollapse from "../../../Modal/ExpandCollapse/ExpandCollapse";

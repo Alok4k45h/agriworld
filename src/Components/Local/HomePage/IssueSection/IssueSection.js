@@ -7,7 +7,7 @@ function IssueSection() {
     {
       id: 1,
       image:
-        "https://itrendly.com/wp-content/uploads/2022/09/Agriculture-Tools-used-in-Biotechnology-techniques.jpg",
+        "https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2023/11/Agriculture.jpeg",
       heading: "Sustainable Agriculture Practices",
       description:
         "Promoting eco-friendly farming methods to ensure soil health, water conservation, and sustainable food production for future generations.",
@@ -16,7 +16,7 @@ function IssueSection() {
     {
       id: 2,
       image:
-        "https://itrendly.com/wp-content/uploads/2022/09/Agriculture-Tools-used-in-Biotechnology-techniques.jpg",
+        "https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2023/11/Agriculture.jpeg",
       heading: "Climate Resilience in Farming",
       description:
         "Helping farmers adapt to changing climatic conditions with innovative techniques and advanced technology.",
@@ -25,7 +25,7 @@ function IssueSection() {
     {
       id: 3,
       image:
-        "https://itrendly.com/wp-content/uploads/2022/09/Agriculture-Tools-used-in-Biotechnology-techniques.jpg",
+        "https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2023/11/Agriculture.jpeg",
       heading: "Organic and Eco-Friendly Solutions",
       description:
         "Advocating for the use of organic inputs and natural pest management methods to reduce environmental impact.",
@@ -47,14 +47,14 @@ function IssueSection() {
             }`}
             data-aos={issue.animation}
           >
-            <div className="col-12 col-md-5 text-center">
+            <div className="col-12 col-md-4 text-center">
               <img
                 src={issue.image}
                 className="issue-section-img"
                 alt={`Issue ${issue.id}`}
               />
             </div>
-            <div className="col-12 col-md-7">
+            <div className="col-12 col-md-8">
               <h1 className="issue-section-heading">{issue.heading}</h1>
               <p className="issue-section-description">{issue.description}</p>
               <Link to="" className="issue-item-link">

@@ -13,7 +13,8 @@
   font-weight: bold;
 }
 .stories-card {
-  background-color: rgba(0, 128, 0, 0.699);
+  background: url("https://res.cloudinary.com/alokkumar07/image/upload/v1737483036/Agrigreen/ContactImg_ke1fqr.webp")
+    no-repeat center center/cover;
   padding: 20px;
 }
 .stories-card-image {
@@ -24,13 +25,13 @@
 .stories-card-description {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: white;
+  color: rgba(0, 0, 0, 0.904);
   padding: 10px;
 }
 .stories-card-person-name {
   font-family: "Protest Revolution", sans-serif;
   font-size: 1.25rem;
-  color: white;
+  color: black;
   font-weight: 500;
 }
 

@@ -15,21 +15,21 @@
 .info-title {
   font-size: 2rem;
   font-weight: 700;
-  color: goldenrod; /* Deep green for nature theme */
+  color: white;
   margin-bottom: 1rem;
 }
 
 .info-subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2a7d2b;
+  color: black;
   margin-top: 2rem;
 }
 
 .info-desc {
   font-size: 1rem;
   line-height: 1.6;
-  color: #f4f9f4;
+  color: rgba(0, 0, 0, 0.849);
   margin-bottom: 1.5rem;
 }
 
@@ -41,7 +41,7 @@
 .contact-item {
   font-size: 1.1rem;
   font-weight: bold;
-  color: blue;
+  color: white;
 }
 
 /* Social Links */

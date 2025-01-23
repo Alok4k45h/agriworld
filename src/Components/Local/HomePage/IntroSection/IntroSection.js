@@ -40,7 +40,7 @@ const IntroContent = () => (
       labore et dolore magna aliqua.
     </p>
     <Link to="/about" className="intro-link">
-      Wanna Know more
+      Know more
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

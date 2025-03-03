@@ -5,6 +5,7 @@ import AboutSection from "../Components/Local/AboutPage/AboutSection/AboutSectio
 import MissionSection from "../Components/Local/AboutPage/MissionSection/MissionSection";
 import AgriTeam from "../Components/Local/AboutPage/AgriTeam/AgriTeam";
 import NavigateTop from "../Components/Global/NavigateTop/NavigateTop";
+import WhatWeAreDoing from "../Components/Local/AboutPage/WhatWeAreDoingSection/WhatWeAreDoing";
 
 function About() {
   return (
@@ -17,6 +18,7 @@ function About() {
       />
       <AboutSection />
       <MissionSection />
+      <WhatWeAreDoing />
       <AgriTeam />
     </div>
   );

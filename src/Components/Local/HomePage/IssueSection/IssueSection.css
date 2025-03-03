@@ -1,76 +1,144 @@
-/* General Section Styling */
+/* 🔹 Premium Background with Parallax Effect */
 .issue-section {
-  background: url("https://res.cloudinary.com/alokkumar07/image/upload/v1737310223/Agrigreen/issueBg_igbzqy.webp")
-    no-repeat center center/cover;
-  padding: 3rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("https://res.cloudinary.com/alokkumar07/image/upload/v1740915345/Agrigreen/0264a7e0-7ddf-48a1-a7b0-34b0869036f1.png")
+      no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
   position: relative;
 }
 
-.issue-card {
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgba(240, 248, 255, 0.85);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.issue-section-img {
+/* 🔹 Dark Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
-.issue-section-super-heading {
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
+.container {
+  position: relative;
+  z-index: 2;
 }
 
+/* 🔹 Premium Section Heading */
 .issue-section-heading {
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #34573a;
+  color: #ffd700; /* Gold color for premium feel */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.premium-icon {
+  color: #ffd700;
+  font-size: 2.2rem;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* 🔹 Glassmorphism Effect for Cards */
+.issue-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.issue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
+}
+
+/* 🔹 Issue Icons */
+.issue-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.issue-icon-content {
+  font-size: 4rem;
+  color: #ffd700;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.issue-card:hover .issue-icon-content {
+  transform: scale(1.1);
+}
+
+/* 🔹 Issue Text Content */
+.issue-text-content {
+  color: #ffffff;
+}
+
+/* 🔹 Issue Title */
+.issue-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
   margin-top: 1rem;
 }
 
-.issue-section-description {
+/* 🔹 Issue Description */
+.issue-description {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: #5a7184;
+  font-size: 1.1rem;
+  color: #dcdcdc;
   margin: 1rem 0;
   text-align: justify;
 }
 
-.issue-item-link {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #004916;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.issue-description strong {
+  color: #ffd700;
 }
 
-.issue-item-link:hover {
-  color: #028837;
-}
-
-/* Responsive Styling */
+/* 🔹 Responsive Adjustments */
 @media (max-width: 768px) {
+  .issue-section-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .issue-card {
     flex-direction: column;
     text-align: center;
   }
 
-  .issue-section-heading {
-    font-size: 1.25rem;
+  .issue-title {
+    font-size: 1.5rem;
   }
 
-  .issue-section-description {
-    font-size: 0.9rem;
+  .issue-description {
+    font-size: 1rem;
+  }
+
+  .premium-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* 🔹 Glow Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  }
+  to {
+    text-shadow: 0 0 20px #fff4a3, 0 0 40px #fff4a3;
   }
 }

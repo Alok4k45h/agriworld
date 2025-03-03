@@ -18,26 +18,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
   z-index: 1;
 }
 
-/* Content Box */
+/* 🔹 Premium Text Box - Single Elegant Text Container */
 .content-box {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 700px;
-}
-
-/* Banner Card */
-.banner-card {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Glassmorphism */
-  border-radius: 20px;
-  padding: 2rem;
   color: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.658);
 }
 
 /* Banner Image */
@@ -52,23 +43,38 @@
   transform: scale(1.05); /* Subtle zoom effect */
 }
 
-/* Text Styles */
+/* 🔹 Refined Banner Text */
 .banner-heading {
   font-family: "Protest Revolution", sans-serif;
   font-size: 6rem;
   font-weight: bold;
   color: #ffffff;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6); /* Soft glow for contrast */
 }
 
 /* Highlighted Letters */
 .highlight-A {
   color: #eab01c;
   font-size: 7rem;
+  text-shadow: 3px 3px 15px rgba(255, 204, 0, 0.8);
 }
 
 .highlight-G {
   color: green;
   font-size: 7rem;
+  text-shadow: 3px 3px 15px rgba(0, 128, 0, 0.8);
+}
+
+/* 🔹 Smooth Entrance Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Styles */
@@ -77,7 +83,8 @@
     font-size: 2.5rem;
   }
 
-  .banner-description {
-    font-size: 1rem;
+  .highlight-A,
+  .highlight-G {
+    font-size: 3rem;
   }
 }

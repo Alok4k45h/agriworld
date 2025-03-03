@@ -1,57 +1,165 @@
-/* Mission Section Styling */
+/* 🌿 Premium Styling for Mission & Vision Section */
 .mission-section {
-  padding: 3rem 0; /* Consistent padding */
-  background-color: #f9f9f9; /* Light neutral background */
-}
-
-/* Image Container */
-.img-container {
-  background-image: url("https://i.pinimg.com/474x/3a/4c/35/3a4c357c0c1e580cd9f70a9b3e391e1f.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  padding: 6rem 2rem;
+  background: #f4f9f4; /* Clean, fresh background */
   text-align: center;
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 2rem; /* Slightly larger for emphasis */
-  font-weight: bold;
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: "Poppins", sans-serif;
 }
 
-/* Text Container */
-.txt-container {
+/* 📌 Section Container */
+.mission-vision-section {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* 🌱 Mission & Vision Box */
+.mission-box,
+.vision-box {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  text-align: left;
+}
+
+.mission-box:hover,
+.vision-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏆 Heading Styling */
+.mission-box h2,
+.vision-box h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c6e49;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.mission-box h2::after,
+.vision-box h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eab01c;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* 📝 Paragraph Styling */
+.mission-box p,
+.vision-box p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/* Core Values Section */
+.core-values-section {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.core-values-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d6a4f;
+  margin-bottom: 2rem;
+}
+
+/* Core Values Container */
+.core-values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Core Value Boxes */
+.core-value-box {
+  background: rgba(0, 128, 0, 0.274);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
   text-align: center;
-  color: #333333; /* Dark gray for contrast */
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125rem; /* Readable font size */
-  line-height: 1.6; /* Improved line spacing */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
 }
 
-/* Row Styling */
-.row {
-  align-items: center; /* Align items centrally for a polished layout */
+.core-value-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-.flex-row-reverse {
-  flex-direction: row-reverse;
+.core-value-box h3 {
+  font-size: 1.6rem;
+  color: #2d6a4f;
+  margin-bottom: 0.5rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .img-container {
-    font-size: 1.5rem;
-    height: 25vh; /* Reduced height for smaller screens */
+.core-value-box p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Core Value Icons */
+.value-icon {
+  font-size: 2.5rem;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 992px) {
+  .mission-box,
+  .vision-box {
+    max-width: 90%;
   }
 
-  .txt-container {
-    font-size: 1rem;
-    padding: 1rem; /* Extra padding for better readability */
+  .core-value-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-box,
+  .vision-box {
+    padding: 2rem;
+  }
+
+  .core-value-box {
+    width: 100%;
+  }
+
+  .mission-box,
+  .vision-box {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-box h2,
+  .vision-box h2 {
+    font-size: 2rem;
+  }
+
+  .core-value-box h3 {
+    font-size: 1.4rem;
   }
 }

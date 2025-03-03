@@ -4,7 +4,6 @@ import "./ContactSection.css";
 
 const ContactSection = () => {
   const [showContactModal, setShowContactModal] = useState(false);
-
   const handleShowModal = () => setShowContactModal(true);
   const handleCloseModal = () => setShowContactModal(false);
 

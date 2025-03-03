@@ -1,0 +1,90 @@
+/* 🔹 Section Styling */
+.what-we-are-doing-section {
+  background: url("https://miro.medium.com/v2/resize:fit:1400/1*8N-A6T0wpTZPVsOqTAhDKg.jpeg")
+    no-repeat center center/cover;
+  padding: 4rem 0;
+  position: relative;
+  background-attachment: fixed; /* Parallax Effect */
+  text-align: center;
+}
+
+.section-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* 🔹 Practices Container */
+.practices-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 🔹 Practice Card */
+.practice-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  position: relative;
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 Practice Icon */
+.practice-icon {
+  font-size: 3rem;
+  color: #004916;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Titles */
+.practice-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #34573a;
+  text-align: center;
+}
+
+/* 🔹 Description */
+.practice-description,
+.impact-description {
+  font-size: 1rem;
+  color: #5a7184;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* 🔹 Strong emphasis */
+.practice-description strong,
+.impact-description strong {
+  color: #004916;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .practices-container {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-title {
+    font-size: 1.3rem;
+  }
+
+  .practice-description,
+  .impact-description {
+    font-size: 0.95rem;
+  }
+}

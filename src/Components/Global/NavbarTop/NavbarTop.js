@@ -77,7 +77,7 @@ const Navbars = () => {
 
             <div className="navbar-actions text-center">
               <Button
-                variant="outline-success"
+                variant="outline-light"
                 onClick={handleShowModal}
                 className="nav-button"
               >

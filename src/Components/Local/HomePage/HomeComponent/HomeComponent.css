@@ -1,97 +1,168 @@
-/* General Styling */
+/* 🌿 Main Banner Styling */
 .home-banner {
-  height: 100vh;
-  background: url("https://res.cloudinary.com/alokkumar07/image/upload/v1737308767/Agrigreen/AgriBanner_fw4sbd.webp")
-    no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
-  padding: 0 20px;
-  color: #ffffff;
-  backdrop-filter: blur(10px);
-  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.home-banner::before {
-  content: "";
+/* 🖼️ Carousel Section */
+.carousel-container {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
   z-index: 1;
-  mix-blend-mode: overlay;
 }
 
-.home-content {
-  position: relative;
+.carousel-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* 🔹 Dark Overlay for Better Text Visibility */
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text contrast */
   z-index: 2;
-  max-width: 800px;
-  text-align: center;
 }
 
-/* Typography */
+/* 📜 Text Content Section */
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 3;
+  color: white;
+  width: 40%;
+}
+
+/* 🌟 Glassmorphism Effect */
+.glass-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🌍 Animated Typing Effect */
 .typewriter-heading {
   font-family: "Protest Revolution", sans-serif;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.657);
-  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/* 🏡 Branding Header */
 .home-heading {
   font-family: "Protest Revolution", sans-serif;
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.657);
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/* 💬 Descriptive Text */
 .home-description {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.657);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* 🍀 Highlighted Letters */
 .highlight-A-home {
-  color: #eab01c;
-  font-size: 4rem;
+  color: #ffd700;
+  font-size: 3.8rem;
 }
 
 .highlight-G-home {
-  color: #388e3c;
-  font-size: 4rem;
+  color: #76c043;
+  font-size: 3.8rem;
 }
 
-/* Images */
-.logo-image {
-  max-width: 400px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease-in-out;
+/* 💡 Quote Section */
+.home-quote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+  margin-top: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.logo-image:hover {
-  transform: scale(1.2);
+/* 🚀 CTA Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff9900, #ff6600);
+  transform: scale(1.05);
+}
+
+/* 🏵️ Icons */
+.icon {
+  color: #76c043;
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+/* ✨ Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
+  .home-content {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .glass-container {
+    padding: 20px;
+  }
+
   .typewriter-heading {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .home-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
-  .logo-image {
-    max-width: 120px;
-  }
-
-  .home-description {
+  .cta-button {
     font-size: 1rem;
+    padding: 10px 20px;
   }
 }

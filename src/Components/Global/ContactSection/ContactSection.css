@@ -1,37 +1,37 @@
-/* General Section Styling */
+/* 🔹 Contact Section Styling */
 .contact-section {
-  background: linear-gradient(
-    to bottom,
-    rgba(34, 139, 34, 0.8),
-    rgba(255, 255, 255, 0.9)
-  );
-  background-position: center;
+  background: rgba(0, 128, 0, 0.274);
   color: #333;
-  padding: 3rem 0;
+  padding: 4rem 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Heading and Text Styling */
+/* 🔹 Text Content Styling */
 .contact-heading {
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: black;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .contact-heading .highlight-text {
-  color: green;
+  color: green; /* Premium Gold */
 }
 
 .contact-description {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.808);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
-/* Button Styling */
+/* 🔹 Button Styling */
 .contact-button {
   background-color: #2ecc71;
   color: #ffffff;
@@ -41,22 +41,31 @@
   border: none;
   border-radius: 30px;
   padding: 0.75rem 2rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
 }
 
 .contact-button:hover {
   background-color: #27ae60;
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.4);
+}
+
+/* 🔹 Image Styling */
+.contact-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-image:hover {
   transform: scale(1.05);
 }
 
-/* Image Styling */
-.contact-image {
-  width: 100%;
-  max-width: 450px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive Styling */
+/* 🔹 Responsive Design */
 @media (max-width: 768px) {
   .contact-heading {
     font-size: 2rem;
@@ -64,5 +73,9 @@
 
   .contact-description {
     font-size: 1rem;
+  }
+
+  .contact-image {
+    max-width: 350px;
   }
 }

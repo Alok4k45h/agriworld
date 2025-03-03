@@ -1,19 +1,129 @@
-/* Result Section Styling */
-.result-section {
-  padding: 3rem 0; /* Consistent padding for top and bottom */
-  background-color: #f9f9f9; /* Light background for contrast */
+/* 🔹 General Section Styling */
+.results-section {
+  padding: 4rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 30, 0, 0.8),
+      rgba(0, 30, 0, 0.9)
+    ),
+    url("https://res.cloudinary.com/alokkumar07/image/upload/v1740915345/Agrigreen/background.jpg")
+      no-repeat center center/cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.result-heading {
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 2rem; /* Adjusted for better hierarchy */
-  font-weight: 700;
-  color: #004916; /* Neutral dark color for accessibility */
+/* 🔹 Scroll Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #ffd700;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.2s ease-out;
+}
+
+/* 🔹 Heading */
+.result-section-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔹 Swiper Styles */
+.swiper {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Swiper Controls */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffd700;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffd700;
+}
+
+/* 🔹 Result Cards */
+.result-card {
+  width: 400px; /* Fixed width */
+  height: 450px; /* Fixed height */
+  text-align: center;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures even spacing */
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
+}
+
+/* 🔹 Result Card Title */
+.result-card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffd700;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
+/* 🔹 Result Card Text */
+.result-card-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #eaeaea;
+  text-align: justify;
+  flex-grow: 1; /* Ensures text fills space properly */
+}
+
+.result-card-subtitle strong {
+  color: #ffd700;
+}
+
+/* 🔹 Responsive Adjustments */
 @media (max-width: 768px) {
-  .result-heading {
-    font-size: 1.5rem; /* Responsive font size for smaller screens */
+  .result-section-heading {
+    font-size: 2rem;
+  }
+
+  .result-card {
+    width: 280px;
+    height: 360px;
+    padding: 1.5rem;
+  }
+
+  .result-card-title {
+    font-size: 1.2rem;
+  }
+
+  .result-card-subtitle {
+    font-size: 0.9rem;
   }
 }

@@ -1,64 +1,101 @@
 /* General Section Styling */
 .intro-section {
-  padding: 3rem 0; /* Consistent spacing */
-  background-color: #f9f9f9; /* Light background for contrast */
-}
-
-.container {
-  max-width: 75%;
-}
-
-/* Intro Content Styling */
-.text-content {
-  text-align: left;
-  padding: 1.5rem;
-}
-
-.intro-heading {
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #004916; /* Sophisticated green tone */
-  margin-bottom: 1rem;
-}
-
-.intro-description {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #5a7184;
-  text-align: justify;
-}
-
-/* Video Styling */
-.video-container {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #e8f5e9, #f3f7ed);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+}
+
+/* Box Styling for a Clean, Modern Look */
+.content-box {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.intro-heading {
+  font-family: "Protest Revolution", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004916;
+  margin-bottom: 1.5rem;
+}
+
+/* Description */
+.intro-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #5a7184;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+}
+
+/* Video Section */
+.video-container {
+  display: flex;
+  justify-content: center;
 }
 
 .responsive-iframe {
   width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9; /* Enforces consistent aspect ratio */
+  height: 380px;
   border: none;
-  border-radius: 8px; /* Subtle rounded corners for modern design */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for premium look */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .text-content {
-    text-align: center;
-    padding: 1rem;
+@media (max-width: 992px) {
+  .content-box {
+    padding: 2.5rem;
   }
 
   .intro-heading {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+  }
+
+  .intro-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
   }
 
   .intro-description {
     font-size: 1rem;
+  }
+
+  .responsive-iframe {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-heading {
+    font-size: 1.8rem;
+  }
+
+  .responsive-iframe {
+    height: 240px;
   }
 }

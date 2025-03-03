@@ -1,100 +1,114 @@
-// import React from "react";
-// import "./MissionSection.css";
-
-// function MissionSection() {
-//   return (
-//     <div className="pt-5 pb-5">
-//       <div className="container-fluid">
-//         <div className="row mb-3">
-//           <div className="col-12 col-md-6 img-container" data-aos="fade-right">
-//             <h1>Our Mission</h1>
-//           </div>
-//           <div className="col-12 col-md-6 txt-container">
-//             <p>
-//               To become the industry leader and simplify the process of
-//               conducting assessments and examinations by unique and leading-edge
-//               solutions.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className="row mb-3">
-//           <div className="col-12 col-md-6 txt-container order-2 order-md-1">
-//             <p>
-//               To become the industry leader and simplify the process of
-//               conducting assessments and examinations by unique and leading-edge
-//               solutions.
-//             </p>
-//           </div>
-//           <div
-//             className="col-12 col-md-6 img-container order-1 order-md-2"
-//             data-aos="fade-left"
-//           >
-//             <h1>Our Vision</h1>
-//           </div>
-//         </div>
-
-//         <div className="row mb-3">
-//           <div className="col-12 col-md-6 img-container" data-aos="fade-right">
-//             <h1>Core Values</h1>
-//           </div>
-//           <div className="col-12 col-md-6 txt-container">
-//             <p>
-//               We Believe at- 1. Nurture each stakeholder 2. Efforts not excuses
-//               3. Make positive impact 4. Experience is key
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default MissionSection;
-
 import React from "react";
+import { FaLeaf, FaSeedling, FaGlobe, FaUsers } from "react-icons/fa";
 import "./MissionSection.css";
 
-const MissionSection = () => {
-  const missionData = [
-    {
-      title: "Our Mission",
-      text: "To become the industry leader and simplify the process of conducting assessments and examinations by unique and leading-edge solutions.",
-      animation: "fade-right",
-      order: "normal",
-    },
-    {
-      title: "Our Vision",
-      text: "To become the industry leader and simplify the process of conducting assessments and examinations by unique and leading-edge solutions.",
-      animation: "fade-left",
-      order: "reverse",
-    },
-    {
-      title: "Our Core Values",
-      text: "We believe in: 1. Nurturing each stakeholder 2. Efforts, not excuses 3. Making a positive impact 4. Experience is key.",
-      animation: "fade-right",
-      order: "normal",
-    },
-  ];
+const coreValues = [
+  {
+    title: "Sustainability",
+    text: "We are dedicated to promoting sustainable agricultural practices that protect the environment, conserve natural resources, and ensure long-term ecological balance through agroforestry and best farming practices.",
+    icon: <FaLeaf className="value-icon" />,
+  },
+  {
+    title: "Innovation",
+    text: "We embrace the latest technologies in agriculture, waste management, and renewable energy solutions to reduce pollution, improve efficiency, and drive positive change in environmental stewardship.",
+    icon: <FaSeedling className="value-icon" />,
+  },
+  {
+    title: "Collaboration",
+    text: "We believe in the power of collective action. By engaging and empowering local communities, especially through self-help groups and farmer producer companies, we foster inclusive, community-driven solutions for sustainable development.",
+    icon: <FaUsers className="value-icon" />,
+  },
+  {
+    title: "Resilience",
+    text: "We are committed to building climate-resilient farming systems that help communities adapt to environmental challenges and enhance their ability to thrive in an ever-changing world.",
+    icon: <FaGlobe className="value-icon" />,
+  },
+  {
+    title: "Intigrity",
+    text: "We uphold the highest standards of transparency, accountability, and ethical practices in all our efforts, ensuring that our impact is both meaningful and sustainable.",
+    icon: <FaGlobe className="value-icon" />,
+  },
+];
 
+const MissionSection = () => {
   return (
     <section className="mission-section">
-      <div className="container">
-        {missionData.map((item, index) => (
-          <div
-            key={index}
-            className={`row mb-4 ${
-              item.order === "reverse" ? "flex-row-reverse" : ""
-            }`}
-          >
-            <div className="col-md-6 img-container" data-aos={item.animation}>
-              <h1>{item.title}</h1>
-            </div>
-            <div className="col-md-6 txt-container">
-              <p>{item.text}</p>
-            </div>
+      <div className="container-fluid">
+        {/* Mission & Vision Section */}
+        <div className="mission-vision-section">
+          <div className="mission-box" data-aos="fade-up">
+            <h2>🌱 Our Mission</h2>
+            <p>
+              To empower farming communities with{" "}
+              <strong>
+                sustainable agroforestry, climate-smart agriculture &
+                eco-innovation
+              </strong>{" "}
+              to combat{" "}
+              <strong>
+                climate change, pollution & environmental degradation.
+              </strong>{" "}
+              Through{" "}
+              <strong>
+                nature-based solutions, waste recycling & green energy
+              </strong>
+              , we drive resilient ecosystems and thriving livelihoods.
+              <br />
+              <br />
+              By <strong>2035</strong>, we aim to revolutionize{" "}
+              <strong>natural resource management</strong> through{" "}
+              <strong>community-led action</strong>, fostering a greener,
+              self-sustaining future. 🌱✨
+            </p>
           </div>
-        ))}
+
+          <div className="vision-box" data-aos="fade-up">
+            <h2>🌍 Our Vision</h2>
+            <p>
+              To lead the transformation of agriculture through the promotion of{" "}
+              <strong>agroforestry,</strong> empowering communities to adopt{" "}
+              <strong>sustainable farming practices</strong> that combat{" "}
+              <strong>
+                climate change, restore ecosystems, and ensure long-term food
+                security.
+              </strong>
+              <br />
+              <br />
+              We envision to create a greener, healthier planet by integrating{" "}
+              <strong>innovative agricultural technologies</strong> and{" "}
+              <strong>environmental stewardship, fostering resilience,</strong>{" "}
+              and creating a harmonious balance between nature and food
+              production.
+            </p>
+          </div>
+        </div>
+
+        {/* Core Values Section */}
+        <div className="core-values-section" data-aos="fade-up">
+          <h2>Our Core Values</h2>
+          <p>
+            At <strong>Agri Green Foundation</strong>, we are driven by a deep
+            commitment to{" "}
+            <strong>
+              sustainability, innovation, and community empowerment
+            </strong>
+            .
+            <br />
+            Our values guide every initiative and action we take as we work
+            towards a{" "}
+            <strong>healthier planet and resilient farming communities:</strong>
+          </p>
+
+          <div className="core-values-container">
+            {coreValues.map((value, index) => (
+              <div key={index} className="core-value-box">
+                {value.icon}
+                <h3>{value.title}</h3>
+                <p className="text-justify">{value.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
